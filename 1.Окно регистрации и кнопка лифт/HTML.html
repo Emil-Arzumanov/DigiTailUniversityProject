@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS.css"/>
+    <script src="JS.js"></script>
+</head>
+<body>
+
+
+<button id="login">Login</button>
+<button id="register">Register</button>
+
+<div class="login-box">
+    <a href="#" class="close" id="closeForm"></a>
+    <div class="row">
+        <img src="./img/avatar.png"/>
+    </div>
+    <h2>Войти</h2>
+    <form>
+        <div class="user-box">
+            <input type="text" name="" required=""/>
+            <label>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Email
+            </label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="" required=""/>
+            <label>
+                <i class="fa fa-unlock" aria-hidden="true"></i>
+                Пароль
+            </label>
+        </div>
+        <span class="myClass"><a href="#" class="formButton">КНОПКА</a></span>
+    </form>
+</div>
+
+<div class="reg-box">
+    <a href="#" class="close" id="closeRegForm"></a>
+    <div class="row">
+        <img src="./img/welcome.png"/>
+    </div>
+    <h2>Зарегестрироваться</h2>
+    <form>
+        <div class="user-box">
+            <input type="text" name="" required=""/>
+            <label>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Имя
+            </label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="" required=""/>
+            <label>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Фамилия
+            </label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="" required=""/>
+            <label>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Email
+            </label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="" required=""/>
+            <label>
+                <i class="fa fa-unlock" aria-hidden="true"></i>
+                Пароль
+            </label>
+        </div>
+        <span class="myClass reg"><a href="#" class="formButton">КНОПКА</a></span>
+    </form>
+</div>
+
+</body>
+
+<button id="up"> UP!</button>
+<script>
+    document.querySelector("#up").onclick = () => {
+        window.scrollTo(0,0);
+    }
+    document.querySelector("#login").onclick = () => {
+        document.querySelector(".login-box").style.display = "block";
+        document.querySelector(".reg-box").style.display = "none";
+    }
+    document.querySelector("#closeForm").onclick = () => {
+        document.querySelector(".login-box").style.display = "none";
+    };
+    document.querySelector("#register").onclick = () => {
+        document.querySelector(".reg-box").style.display = "block";
+        document.querySelector(".login-box").style.display = "none";
+    }
+    document.querySelector("#closeRegForm").onclick = () => {
+        document.querySelector(".reg-box").style.display = "none";
+    };
+</script>
+</html>
