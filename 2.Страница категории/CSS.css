@@ -108,12 +108,12 @@ body {
     background-color: white;
     box-shadow: 0 2px 4px #cdcdcd;
     border-radius: 20px;
-    width: 280px;
-    height: 220px;
+    width: 320px;
+    height: 260px;
     overflow: hidden;
 }
 .product .productElement img {
-    width: 280px;
+    width: 320px;
 }
 .product .productArrow {
     background-image:url("imgs/arrowRight.png");
@@ -143,5 +143,5 @@ body {
     float: right;
     font-size: 12px;
     padding-right: 24px;
-    padding-top: 6px;
+    padding-top: 12px;
 }
