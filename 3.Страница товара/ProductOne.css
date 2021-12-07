@@ -3,28 +3,36 @@ body {
 }
 
 .productOneMorning {
-    width: 94%;
-    padding: 0 50px;
-    height: 1800px;
     font-family: Arial;
     font-style: normal;
-    background-color: #f3f3f3;
 }
 
 .mainProduct {
-    padding-top: 24px;
+    background-color: #F3F3F3;
+    padding: 24px 0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 1vw;
+    grid-template-columns: 820px 500px;
+    grid-column-gap: 140px;
+    padding-left: 30px;
+}
+
+.mainProduct img {
+    width: 940px;
+    height: 536px;
 }
 
 .mainProdInfo {
     color: #5b5b5b;
     background-color: #dbdbdb;
+    height: 536px;
+}
+
+.mainProdInfo h1 {
+    font-size: 48px;
 }
 
 .mainProdInfo span {
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .mainProdInfoDiv {
@@ -37,7 +45,7 @@ body {
 
 .mainProdInfoDiv li {
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .mainProdInfoButtonDiv {
@@ -45,38 +53,49 @@ body {
 }
 
 .mainProdButton {
-    background-color: #485E46;
+    margin-top: 162px;
     color: white;
     border: none;
-    border-radius: 20px;
+    background: #485E46;
+    border-radius: 30px;
     padding: 6px 40px;
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .mainProdDescription {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+}
+
+.prodDescription {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .mainProdDescriptionP {
+    height: 696px;
+    padding: 0 128px;
+    background-color: #F8F8F8;
     display: inline-block;
     color: #5b5b5b;
     font-size: 20px;
-    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .otherProducts {
     display: grid;
     justify-content: center;
+    height: 836px;
+    background-color: #F8F8F8;
 }
 
 .product {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 272px 272px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
+    grid-gap: 52px;
 }
 
 .product .productElement {
@@ -128,4 +147,7 @@ body {
 
 .sectionName {
     color: #656565;
+    padding: 27px 0 27px 160px;
+    background-color: #F8F8F8;
+    margin-bottom: 0;
 }
