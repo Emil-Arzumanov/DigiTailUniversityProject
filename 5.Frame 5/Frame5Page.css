@@ -49,7 +49,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image:url("./img/vector.png");
+    background-image: url("./img/vector.png");
     background-position: calc(419px) calc(27px);
     background-repeat: no-repeat;
 }
@@ -151,9 +151,94 @@ body {
     margin-left: 14px;
 }
 
+.enterTitleDiv textarea {
+    resize: none;
+    width: 559px;
+    height: 54px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #D0D0D0;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    padding-left: 30px;
+    padding-top: 13px;
+    display: block;
+}
+
+.enterTitleDiv textarea::placeholder {
+    color: #A5A5A5;
+}
+
+.enterDescriptionDiv textarea {
+    display: block;
+    resize: none;
+    width: 559px;
+    height: 338px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    padding-left: 30px;
+    padding-top: 13px;
+}
+
+.enterDescriptionDiv textarea::placeholder {
+    vertical-align: text-top;
+    color: #A5A5A5;
+}
+
+.addPhotoDiv input {
+    width: 591px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 33px;
+    border: none;
+    color: #A5A5A5;
+    background: white;
+    text-align: right;
+    padding-right: 17px;
+    padding-bottom: 26px;
+}
+
+.addPhotoDiv .plus {
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 60px;
+    top: -53px;
+    left: 357px;
+}
+
+.addPhotoDiv .plus:before,
+.addPhotoDiv .plus:after {
+    content: "";
+    position: absolute;
+    background: #A5A5A5;
+}
+
+.addPhotoDiv .plus:before {
+    left: 50%;
+    top: 2px;
+    bottom: 2px;
+    width: 4px;
+    transform: translateX(-50%);
+}
+
+.addPhotoDiv .plus:after {
+    top: 50%;
+    left: 2px;
+    right: 2px;
+    height: 4px;
+    transform: translateY(-50%);
+}
+
 .saveButtonDiv {
     text-align: center;
-    margin-top: 32px;
+    margin-top: 15px;
 }
 
 .saveButtonDiv input {
