@@ -8,7 +8,7 @@ body {
 }
 
 .mainAccountInfo {
-    padding: 0 160px;
+    padding-top: 0;
     background-color: #f5f5f5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,7 +157,7 @@ body {
 }
 
 .addAvatarButton {
-    padding: 0 160px;
+    padding-top: 0;
     background-color: #f5f5f5;
 }
 
@@ -172,7 +172,8 @@ body {
 }
 
 .accountMenu {
-    padding: 0 160px;
+    margin: auto;
+    padding-top: 0;
     background-color: #f5f5f5;
 }
 
@@ -206,7 +207,7 @@ body {
 
 .tableNote table {
     width: 1200px;
-    margin: 45px 160px;
+    margin-top: 45px;
     border: 1px solid #CFCFCF;
     background: #FBF9F9;
     padding: 17px 33px 25px 33px;
@@ -253,7 +254,7 @@ body {
 
 .informationTable table {
     width: 1200px;
-    margin: 45px 160px;
+    margin-top: 45px;
     border: 1px solid #CFCFCF;
     background: #FBF9F9;
     padding: 17px 33px 25px 33px;
