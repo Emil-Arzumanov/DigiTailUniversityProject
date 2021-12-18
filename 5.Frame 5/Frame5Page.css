@@ -7,10 +7,12 @@ body {
 .mainDiv {
     height: 915px;
     background-color: #232323;
-    padding: 37px 140px 122px 120px;
+    padding-top: 37px;
+    padding-bottom: 122px;
 }
 
 .menuDiv {
+    margin: auto;
     height: 756px;
     width: 1284px;
     background-color: #565656;
