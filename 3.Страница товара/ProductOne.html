@@ -6,6 +6,33 @@
     <meta charset="UTF-8">
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><span class="letter">D</span>igi<span class="letter">T</span>ail</div>
+            <nav class="nav">
+                <a class="nav__link" href="#">главная</a>
+                <a class="nav__link" href="#">категории</a>
+                <a class="nav__link" href="#">поддержка</a>
+                <div class="nav__img">
+                    <img src="./imgs/user2.png" width="20" height="20">
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="topnav">
+    <a href="#">Арты</a>
+    <a href="#">3d-модели</a>
+    <a href="#">GameDev</a>
+    <a href="#">Темы</a>
+    <a href="#">Презентации</a>
+    <a href="#">Сайты</a>
+    <a href="#">Шаблоны</a>
+    <a href="#">Wordpress</a>
+    <a href="#">Скрипты</a>
+</div>
 <div class="productOneMorning">
     <div class="mainProduct">
         <img src="imgs/mainProduct.png" class="mainProdImg">
@@ -71,5 +98,14 @@
         </div>
     </div>
 </div>
+<script>
+    addEventListener('load', function () {
+        addEventListener('scroll', function () {
+            document.querySelector('header').style.backgroundColor = document.documentElement.scrollTop > 55 ?
+                'rgb(0,0,0,0.7)' :
+                '#404040';
+        });
+    });
+</script>
 </body>
 </html>
