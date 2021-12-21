@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-style: normal;
 }
 
@@ -14,6 +14,7 @@ body {
 }
 
 .header {
+    letter-spacing: 0.3em;
     top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -350,6 +351,7 @@ body {
     background: #ECECEC;
     padding-left: 20px;
     padding-right: 20px;
+    letter-spacing: 0.3em;
 }
 
 .container__foot {
@@ -368,7 +370,7 @@ body {
 }
 
 .footer2 {
-    padding-left: 200px;
+    padding-left: 108px;
 }
 
 .foot__header {
@@ -401,12 +403,12 @@ body {
 
 .foot4 {
     padding-top: 5px;
-    margin-left: 155px;
+    margin-left: 154px;
 }
 
 .foot5 {
     padding-top: 5px;
-    margin-left: 220px;
+    margin-left: 302px;
 }
 
 
