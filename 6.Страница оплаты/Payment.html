@@ -3,6 +3,7 @@
 <head>
     <title>AccountReduct</title>
     <link rel="stylesheet" href="Payment.css">
+    <!--Добавь сюда link к файлу mainHeaderFooter.css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
@@ -10,6 +11,34 @@
     <meta charset="UTF-8">
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><span class="letter">D</span>igi<span class="letter">T</span>ail</div>
+            <nav class="nav">
+                <a class="nav__link" th:href="@{/}">главная</a>
+                <a class="nav__link" th:href="@{/product/showProducts}">категории</a>
+                <a class="nav__link" href="#">поддержка</a>
+                <div class="nav__img">
+                    <img th:src="@{/public/img/main_page/shopping-cart.png}" width="24" height="24">
+                </div>
+                <a class="nav__link2" href="#">343$</a>
+
+                <div class="nav__img2">
+                    <ul class="topmenu">
+                        <li><a href="#"><img th:src="@{/public/img/main_page/user2.png}" width="24" height="24"></a>
+                            <ul class="submenu">
+                                <li class="sub"><a th:href="@{/user}">Аккаунт</a></li>
+                                <li class="sub2"><a th:action="@{/logout}">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</header>
 <div class="paymentPageMainDiv">
     <div class="paymentField">
         <div class="paymentFieldInnerDiv">
@@ -31,7 +60,6 @@
     <p><span class="plus"></span><span class="text">Добавить другой способ оплаты</span></span></p>
 </div>
 
-<!---->
 <section class="section3">
     <div class="container__foot">
         <div class="foot__header">
@@ -110,5 +138,14 @@
 
 
 </section>
+<script>
+    addEventListener('load', function () {
+        addEventListener('scroll', function () {
+            document.querySelector('header').style.backgroundColor = document.documentElement.scrollTop > 55 ?
+                'rgb(0,0,0,0.7)' :
+                '#404040';
+        });
+    });
+</script>
 </body>
 </html>
